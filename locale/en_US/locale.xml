@@ -13,6 +13,6 @@
 
 <locale name="en_US" full_name="U.S. English">
 	<message key="plugins.generic.institutionalHome.name">Institutional Home</message>
-	<message key="plugins.generic.institutionalHome.description">This plugin adds a field for thee institutional home of a journal.</message>
+	<message key="plugins.generic.institutionalHome.description">This plugin adds a field for the institutional home of a journal.</message>
 	<message key="plugins.generic.institutionalHome.label">Institutional Home</message>
 </locale>
