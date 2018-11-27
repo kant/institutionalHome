@@ -52,7 +52,10 @@ class InstitutionalHomePlugin extends GenericPlugin {
 	public function addToSchema($hookName, $schema) {
 		$prop = '{
 			"type": "string",
-			"apiSummary": true
+			"apiSummary": true,
+			"validation": [
+				"nullable"
+			]
 		}';
 		$schema->properties->institutionalHome = json_decode($prop);
 	}
@@ -64,7 +67,7 @@ class InstitutionalHomePlugin extends GenericPlugin {
 	 * @param $form FormHandler
 	 */
 	public function addtoForm($hookName, $form) {
-		if ($form->id !== 'contextMasthead') {
+		if (!defined('FORM_MASTHEAD') || $form->id !== FORM_MASTHEAD) {
 			return;
 		}
 
@@ -74,7 +77,7 @@ class InstitutionalHomePlugin extends GenericPlugin {
 			return;
 		}
 
-		$form->addField(new FieldText('institutionalHome', [
+		$form->addField(new \PKP\components\forms\FieldText('institutionalHome', [
 			'label' => __('plugins.generic.institutionalHome.label'),
 			'groupId' => 'publishing',
 			'value' => $context->getData('institutionalHome'),
