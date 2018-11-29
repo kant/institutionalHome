@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * locale.xml
+  *
+  * Copyright (c) 2014-2017 Simon Fraser University
+  * Copyright (c) 2003-2017 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the en_US (U.S. English) locale.
+  -->
+
+<locale name="es_ES" full_name="Español (España)">
+	<message key="plugins.generic.institutionalHome.name">Inicio Institucional</message>
+	<message key="plugins.generic.institutionalHome.description">Este módulo añade una opción para la página de inicio institucional de una revista.</message>
+	<message key="plugins.generic.institutionalHome.label">Página de inicio Institucional</message>
+</locale>
